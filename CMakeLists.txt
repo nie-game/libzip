@@ -6,19 +6,19 @@ PROJECT(libzip
   VERSION 1.7.0.1
   LANGUAGES C)
 
-OPTION(ENABLE_COMMONCRYPTO "Enable use of CommonCrypto" ON)
-OPTION(ENABLE_GNUTLS "Enable use of GnuTLS" ON)
-OPTION(ENABLE_MBEDTLS "Enable use of mbed TLS" ON)
+OPTION(ENABLE_COMMONCRYPTO "Enable use of CommonCrypto" OFF)
+OPTION(ENABLE_GNUTLS "Enable use of GnuTLS" OFF)
+OPTION(ENABLE_MBEDTLS "Enable use of mbed TLS" OFF)
 OPTION(ENABLE_OPENSSL "Enable use of OpenSSL" ON)
-OPTION(ENABLE_WINDOWS_CRYPTO "Enable use of Windows cryptography libraries" ON)
+OPTION(ENABLE_WINDOWS_CRYPTO "Enable use of Windows cryptography libraries" OFF)
 
-OPTION(ENABLE_BZIP2 "Enable use of BZip2" ON)
-OPTION(ENABLE_LZMA "Enable use of LZMA" ON)
+OPTION(ENABLE_BZIP2 "Enable use of BZip2" OFF)
+OPTION(ENABLE_LZMA "Enable use of LZMA" OFF)
 
-OPTION(BUILD_TOOLS "Build tools in the src directory (zipcmp, zipmerge, ziptool)" ON)
-OPTION(BUILD_REGRESS "Build regression tests" ON)
-OPTION(BUILD_EXAMPLES "Build examples" ON)
-OPTION(BUILD_DOC "Build documentation" ON)
+OPTION(BUILD_TOOLS "Build tools in the src directory (zipcmp, zipmerge, ziptool)" OFF)
+OPTION(BUILD_REGRESS "Build regression tests" OFF)
+OPTION(BUILD_EXAMPLES "Build examples" OFF)
+OPTION(BUILD_DOC "Build documentation" OFF)
 
 INCLUDE(CheckFunctionExists)
 INCLUDE(CheckIncludeFiles)
